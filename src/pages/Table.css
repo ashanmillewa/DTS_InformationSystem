@@ -7,10 +7,10 @@
  }
 
  .profile{
-  margin-left: 165px;
-  margin-top: 25px;
-  width: 100px;
-  height: 100px;
+  margin-left: 145px;
+  margin-top: -15px;
+  width: 150px;
+  height: 150px;
 }
 
 .changeUser{
@@ -20,7 +20,7 @@
 }
 
 .table1 {
-  margin: 30px;
+  margin-top: 0px;
   margin-left: 120px;
   border-collapse: collapse;
   border: 1px solid #ddd;
@@ -132,7 +132,7 @@
 
 .serialCode1{
   margin-top: 20px;
-  margin-left: -50px;
+  margin-left: -150px;
   font-weight: bold;
   color: green;
   }
@@ -143,8 +143,8 @@
 }
 
 .serialCode2{
-  margin-top: 100px;
-  margin-left: -100px;
+  margin-top: 140px;
+  margin-left: -150px;
   font-weight: bold;
   color: green;
   }
@@ -161,7 +161,7 @@
 
 .serialCode3{
   margin-top: 50px;
-  margin-left: 70px;
+  margin-left: 30px;
   font-weight: bold;
   color: green;
   }
@@ -231,7 +231,7 @@ margin-left: 180px;
 
  .serialCode4{
   margin-top: 100px;
-  margin-left: -120px;
+  margin-left: -150px;
   font-weight: bold;
   color: green;
   }
@@ -254,10 +254,16 @@ margin-left: 180px;
 
 .table26{
   margin-top: -80px;
-  margin-left: 180px;
+  margin-left: 120px;
 }
 
 .serialCode6{
+  margin-top: 50px;
+  margin-left: -50px;
+  font-weight: bold;
+  color: green;
+  }
+.serialCode7{
   margin-top: 50px;
   margin-left: -50px;
   font-weight: bold;
@@ -315,16 +321,6 @@ margin-left: 180px;
   outline: none;
 }
 
-.detailsClz{
-  width: 450px;
-  height: 350px;
-  border: 2px solid #161515;
-}
-.detailsClz1{
-  width: 450px;
-  height: 350px;
-  border: 2px solid #161515;
-}
 
 
 
@@ -334,53 +330,55 @@ margin-left: 180px;
   height: 350px;
   border: 2px solid #161515;
   margin-top: 50px;
-  margin-left: -100px;
-}
+  margin-left: -50px;
+ }
 
 .detailsClz02{
   width: 400px;
   height: 350px;
   border: 2px solid #161515;
-  margin-left: -915px;
-  margin-top: 55px;
-}
+  margin-top: -354px;
+  margin-left: 380px;
+ }
 .detailsClz03{
   width: 400px;
   height: 350px;
   border: 2px solid #161515;
-  margin-top: -580px;
-  margin-left: 320px;
+  margin-top: -352px;
+  margin-left: 810px;
 }
 
 .detailsClz04{
   width: 400px;
   height: 350px;
   border: 2px solid #161515;
-  margin-left: -910px;
-  margin-top: -30px;
-}
+  margin-top: -354px;
+  margin-left: 1250px;
+  
+ }
 
 .detailsClz05{
   width: 400px;
   height: 350px;
   border: 2px solid #161515;
-  margin-top: -420px;
-  margin-left: -100px;
-}
+  margin-top: 10px;
+  margin-left: -50px;
+ 
+ }
 .detailsClz06{
   width: 400px;
   height: 350px;
   border: 2px solid #161515;
-  margin-left: -1335px;
-  margin-top: -415px;
-}
+  margin-top: -354px;
+  margin-left: 380px;
+ }
 .detailsClz07{
   width: 400px;
   height: 350px;
   border: 2px solid #161515;
-  margin-top: -860px;
-  margin-left: 1200px;
-}  
+  margin-top: -355px;
+  margin-left: 810px;
+ }  
 
 
 @media screen and (max-width: 400px) {
@@ -445,66 +443,63 @@ margin-left: 180px;
     height: 300px;
     border: 2px solid #161515;
     font-size: small;
-    background-color: red;
-    margin-left: 5px;
-    margin-top: -300px;
+    margin-top: -10px;
+    margin-left: 15px;
   }
 
   .detailsClz02{
     width: 300px;
-    height: 300px;
+    height: 200px;
     border: 2px solid #161515;
     font-size: small;
-    background-color: blue;
-    margin-left: -1552px;
-    margin-top: 350px;
+    margin-top: 20px;
+    margin-left: 15px;
   }
   .detailsClz03{
     width: 300px;
-    height: 300px;
+    height: 200px;
     border: 2px solid #161515;
     font-size: small;
-    background-color: green;
-    margin-left: 5px;
-    margin-top: -330px;
+    margin-left: 15px;
+    margin-top: 20px;
   }
   .detailsClz04{
     width: 300px;
-    height: 300px;
+    height: 180px;
     border: 2px solid #161515;
     font-size: small;
-    background-color: yellow;
-    margin-left: -1550px;
-    margin-top: 300px;
+    margin-top: 10px;
+    margin-left: 15px;
   }
  
   .detailsClz05{
     width: 300px;
-    height: 300px;
+    height: 250px;
     border: 2px solid #161515;
     font-size: small;
-    background-color: wheat;
-    margin-left: 7px;
-    margin-top: -340px;
+    margin-top: 12px;
+    margin-left: 15px;
   }
   .detailsClz06{
     width: 300px;
-    height: 300px;
+    height: 170px;
     border: 2px solid #161515;
     font-size: small;
-    background-color: brown;
-    margin-top: 300px;
-    margin-left: -1550px;
-
+    margin-top: 10px;
+    margin-left: 15px;
   }
+
   .detailsClz07{
     width: 300px;
-    height: 300px;
+    height: 160px;
     border: 2px solid #161515;
     font-size: small;
-    background-color: orange;
-    margin-top: -100px;    
-  }
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+ 
+  
 
   .img{
     margin-left: 30px;
@@ -538,7 +533,7 @@ margin-left: 180px;
     margin-top: -90px;
     margin-left: 200px;
     font-weight: bold;
-    color: red;
+    color: green;
   }
 
   .table21{
@@ -548,7 +543,7 @@ margin-left: 180px;
 
   .serialCode1{
     margin-top: 10px;
-    margin-left: -20px;
+    margin-left: -90px;
     font-weight: bold;
     color: green;
     }
@@ -560,7 +555,7 @@ margin-left: 180px;
 
   .serialCode2{
     margin-top: 40px;
-    margin-left: -100px;
+    margin-left: -110px;
     font-weight: bold;
     color: green;
     }
@@ -571,22 +566,15 @@ margin-left: 180px;
   .serialCode3{
     margin-left: 10px;
     margin-top: 10px;
+    color: green;
   }
   .table25{
     margin-left: 130px;
     margin-top: -90px;
   }
-  .serialCode5{
-    margin-top: -0px;
-  }
+
   .table27{
     margin-left: 110px;
-  }
-  .serialCode55{
-    margin-top: 10px;
-    margin-left: -50px;
-    font-weight: bold;
-    color: green;
   }
   .table24{
     margin-left: 110px;
@@ -595,7 +583,29 @@ margin-left: 180px;
   .serialCode4{
     margin-left: -100px;
     margin-top: 20px;
+    color: green;
   }
+
+  .serialCode5{
+    margin-top: 10px;
+    margin-left: -100px;
+    font-weight: bold;
+    color: green;
+    }
+
+    .serialCode6{
+      margin-top: 32px;
+      margin-left: -100px;
+      font-weight: bold;
+      color: green;
+      }
+
+    .serialCode7{
+      margin-top: 10px;
+      margin-left: -90px;
+      font-weight: bold;
+      color: green;
+      }
 }
 
 
