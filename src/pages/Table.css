@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .table-container{
   width: 100%;
 } 
@@ -194,6 +195,315 @@
   width: 690px;
   height: 400px;
   overflow: hidden;
+=======
+/* General Styles */
+.table-container {
+  width: 100%;
+}
+
+.title {
+  padding: 10px 50px;
+}
+
+.profile {
+  margin-left: 190px;
+  margin-top: 2px;
+  width: 130px;
+  height: 150px;
+}
+/* 1st table*/
+.table1{
+  margin: 20px auto;
+  margin-left: 150px;
+  border-collapse: collapse;
+  border: 1px solid black;
+  font-size: small;
+}
+.th1clz{
+  padding: 8px;
+  text-align: left;
+  border: 1px solid black;
+}
+.td1clz{
+  width: 200px;
+  padding: 8px;
+  text-align: left;
+  border: 1px solid black;
+}
+
+/*2nd main table*/
+.tableDetails {
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 100px;
+}
+
+/* Details Section */
+.detailsClz01, .detailsClz02, .detailsClz03, .detailsClz04, .detailsClz05, .detailsClz06, .detailsClz07 {
+  width: 400px;
+  height: 350px;
+  border: 2px solid #161515;
+  margin: 10px;
+  float: left;
+}
+
+.heading {
+  padding: 10px 20px 50px 30px;
+}
+
+/*data boxes system details*/
+.ItemCode1{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 280px;
+}
+.img1 {
+  display: block;
+  margin-top: 30px;  
+  margin-left: 30px;
+  width: 100px;
+  height: 100px;
+}
+.table21{
+  width: 200px;
+  margin-left: 160px;
+  margin-top: -120px;
+}
+.thclass1{
+  width: 90px;
+  text-align: left;
+}
+.tdclass2{
+  width: 120px;
+}
+.serialCode1 {
+  font-weight: bold;
+  color: green;
+  margin-left: -140px;
+}
+
+/*data boxes Keyboard details*/
+.ItemCode2{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 280px;
+}
+.img2 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.table22{
+  width: 200px;
+  margin-left: 160px;
+  margin-top: -100px;
+}
+.thclass2{
+  width: 90px;
+  text-align: left;
+}
+.tdclass2{
+  width: 120px;
+}
+.serialCode2 {
+  font-weight: bold;
+  color: green;
+  margin-left: -140px;
+  margin-top: 130px;
+}
+
+/*data boxes Screen details*/
+.table23{
+  width: 200px;
+}
+.ItemCode3{
+  font-weight: bold;
+  color: red;
+  margin-top: -200px;
+  margin-left: 280px;
+}
+.heading3 {
+  margin-top: -40px;
+  margin-left:20px ;
+}
+.buttons{
+  margin-top: 60px;
+}
+.img3 {
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.screen1{
+  margin-top: 70px;
+  margin-left: 150px;
+}
+.serialCode3 {
+  font-weight: bold;
+  color: green;
+  margin-left: -140px;
+  margin-top: 70px;
+}
+
+/*data boxes Mouse details*/
+.ItemCode4{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 280px;
+}
+.img4 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.table24{
+  width: 200px;
+  margin-left: 160px;
+  margin-top: -80px;
+}
+.thclass24{
+  width: 90px;
+  text-align: left;
+ }
+.tdclass24{
+  width: 120px;
+  margin-left: 10px;
+ }
+.serialCode4 {
+  font-weight: bold;
+  color: green;
+  margin-left: -120px;
+  margin-top: 120px;
+}
+
+
+/*data boxes Laptop details*/
+.ItemCode5{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 280px;
+}
+.img5 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.table25{
+  width: 250px;
+  margin-left: 140px;
+  margin-top: -120px;
+}
+.thclass25{
+  width: 90px;
+  text-align: left;
+ }
+.tdclass25{
+  width: 120px;
+  margin-left: 10px;
+  text-align: left;
+ }
+.serialCode5 {
+  font-weight: bold;
+  color: green;
+  margin-left: -120px;
+  margin-top: 10px;
+}
+
+/*data boxes UPS details*/
+.ItemCode6{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 280px;
+}
+.img6 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.table26{
+  width: 250px;
+  margin-left: 140px;
+  margin-top: -120px;
+}
+.thclass26{
+  width: 90px;
+  text-align: left;
+ }
+.tdclass26{
+  width: 120px;
+  margin-left: 10px;
+  text-align: left;
+ }
+.serialCode6 {
+  font-weight: bold;
+  color: green;
+  margin-left: -120px;
+  margin-top: 90px;
+}
+ 
+ 
+/*data boxes Priter details*/
+.ItemCode7{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 280px;
+}
+.img7 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.table27{
+  width: 250px;
+  margin-left: 140px;
+  margin-top: -120px;
+}
+.thclass27{
+  width: 90px;
+  text-align: left;
+ }
+.tdclass27{
+  width: 120px;
+  margin-left: 10px;
+  text-align: left;
+ }
+.serialCode7 {
+  font-weight: bold;
+  color: green;
+  margin-left: -120px;
+  margin-top: 90px;
+}
+
+
+ 
+.input-field {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-left: -500px;
+  margin-top: 30px;
+  width: 200px;
+>>>>>>> Stashed changes
 }
 
 .tab button {
@@ -224,6 +534,7 @@
   display: block;
 }
 
+<<<<<<< Updated upstream
 .table24 {
 margin-top: -90px; 
 margin-left: 180px; 
@@ -406,10 +717,366 @@ margin-left: 180px;
   .profile{
     margin-left: 15px;
     margin-top: 25px;
+=======
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+
+
+  .profile{
+    width: 100px;
+    height: 120px;
+    margin-left: 20px;
+  }
+
+  .table1{
+    margin-left: -80px;
+    margin-right: auto;
+    margin-top: 130px;
+    float: none;
+    width: 90%;
+    font-size: medium;
+  }
+
+  .detailsClz01{
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 90%;
+  }
+  .detailsClz02{
+    margin-left: auto;
+  margin-right: auto;
+  float: none;
+  width: 90%;
+  height: 220px;
+  }
+  .detailsClz03{
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 90%;
+    height: 300px;
+
+  }
+  .detailsClz04{
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 90%;
+    height: 220px;
+  }
+  .detailsClz05{
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 90%;
+  }
+  .detailsClz06{
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 90%;
+    height: 220px;
+  }
+  .detailsClz07{
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 90%;
+    height: 220px;
+  }
+
+
+
+/*System  details*/
+.ItemCode1{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 240px;
+}
+.img1 {
+  display: block;
+  margin-top: 30px;  
+  margin-left: 30px;
+  width: 80px;
+  height: 80px;
+}
+.table21{
+  width: 200px;
+  margin-left: 140px;
+  margin-top: -100px;
+}
+
+.thclass1{
+  width: 90px;
+  text-align: left;
+}
+.tdclass2{
+  width: 120px;
+}
+.serialCode1 {
+  font-weight: bold;
+  color: green;
+  margin-left: -120px;
+}
+
+/*Keyboard  details*/
+.ItemCode2{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 240px;
+}
+.img2 {
+  display: block;
+  margin-top: 30px;  
+  margin-left: 30px;
+  width: 80px;
+  height: 80px;
+}
+.table22{
+  width: 200px;
+  height: 200px;
+  margin-left: 140px;
+  margin-top: -80px;
+}
+.thclass2{
+  width: 90px;
+  text-align: left;
+}
+.tdclass2{
+  width: 120px;
+}
+.serialCode2 {
+  font-weight: bold;
+  color: green;
+  margin-left: -120px;
+  margin-top: 10px;
+}
+
+/*data boxes Screen details*/
+.table23{
+  width: 200px;
+}
+.ItemCode3{
+  font-weight: bold;
+  color: red;
+  margin-top: -220px;
+  margin-left: 230px;
+}
+.heading3 {
+  margin-top: -60px;
+  margin-left: 30px ;
+}
+.buttons{
+  margin-top: 80px;
+  margin-left: 10px;
+  border: 1px solid transparent;
+}
+.img3 {
+  width: 100px;
+  height: 100px;
+  margin-left: -150px;
+  margin-top: 60px;
+}
+.screen1{
+  margin-top: 70px;
+  margin-left: 150px;
+}
+.serialCode3 {
+  font-weight: bold;
+  color: green;
+  margin-left: -140px;
+  margin-top: 20px;
+}
+
+/*data boxes Mouse details*/
+.ItemCode4{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 240px;
+}
+.img4 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.table24{
+  width: 200px;
+  margin-left: 160px;
+  margin-top: -80px;
+}
+.thclass24{
+  width: 90px;
+  text-align: left;
+ }
+.tdclass24{
+  width: 120px;
+  margin-left: 10px;
+ }
+.serialCode4 {
+  font-weight: bold;
+  color: green;
+  margin-left: -120px;
+  margin-top: 20px;
+}
+
+/*data boxes Laptop details*/
+.ItemCode5{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 280px;
+}
+.img5 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.table25{
+  width: 250px;
+  margin-left: 120px;
+  margin-top: -120px;
+}
+.thclass25{
+  width: 90px;
+  text-align: left;
+ }
+.tdclass25{
+  width: 120px;
+  margin-left: 10px;
+  text-align: left;
+
+ }
+.serialCode5 {
+  font-weight: bold;
+  color: green;
+  margin-left: -100px;
+  margin-top: 10px;
+}
+
+/*data boxes UPS details*/
+.ItemCode6{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 280px;
+}
+.img6 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  margin-top: 60px;
+}
+.table26{
+  width: 250px;
+  margin-left: 140px;
+  margin-top: -90px;
+}
+.thclass26{
+  width: 90px;
+  text-align: left;
+ }
+.tdclass26{
+  width: 120px;
+  margin-left: 10px;
+  text-align: left;
+
+ }
+.serialCode6 {
+  font-weight: bold;
+  color: green;
+  margin-left: -120px;
+  margin-top: 50px;
+}
+
+/*data boxes Printer details*/
+.ItemCode7{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 280px;
+}
+.img7 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  margin-top: 60px;
+}
+.table27{
+  width: 250px;
+  margin-left: 140px;
+  margin-top: -90px;
+}
+.thclass27{
+  width: 90px;
+  text-align: left;
+ }
+.tdclass27{
+  width: 120px;
+  margin-left: 10px;
+  text-align: left;
+
+ }
+.serialCode7 {
+  font-weight: bold;
+  color: green;
+  margin-left: -120px;
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+  .styled-form {
+    margin: 20px auto;
+    max-width: 100%;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .input-field {
+    margin-top: -20px;
+    margin-left: -50px;
+    width: 200px;
+  }
+
+  .table1{
+    margin-left: -75px;
+    border: 1px solid black;
+    font-size: small;
+    width: 90%;
+  }
+  
+}
+
+@media screen and (max-width: 400px) {
+
+  .table1{
+    margin-left: -95px;
+    border: 1px solid black;
+    font-size: small;
+  }
+  .profile {
+>>>>>>> Stashed changes
     width: 120px;
     height: 130px;
   }
 
+<<<<<<< Updated upstream
   .table1 {
     margin: 25px;
     margin-left: -80px;
@@ -618,3 +1285,347 @@ margin-left: 180px;
 
 
 
+=======
+  .title {
+    padding: 10px 50px;
+  }
+
+  .detailsClz01{
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 85%;
+    height: 320px;
+  }
+  .detailsClz02{
+    margin-left: auto;
+  margin-right: auto;
+  float: none;
+  width: 85%;
+  height: 220px;
+  }
+  .detailsClz03{
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 85%;
+    height: 250px;
+
+  }
+  .detailsClz04{
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 85%;
+    height: 220px;
+  }
+  .detailsClz05{
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 85%;
+    height: 300px;
+  }
+  .detailsClz06{
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 85%;
+    height: 220px;
+  }
+  .detailsClz07{
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 85%;
+    height: 220px;
+  }
+
+
+
+/*System  details*/
+.ItemCode1{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 240px;
+  font-size: small;
+}
+.img1 {
+  display: block;
+  margin-top: 30px;  
+  margin-left: 30px;
+  width: 80px;
+  height: 80px;
+}
+.table21{
+  width: 200px;
+  margin-left: 140px;
+  margin-top: -100px;
+  font-size: small;
+}
+
+.thclass1{
+  width: 90px;
+  text-align: left;
+}
+.tdclass2{
+  width: 120px;
+}
+.serialCode1 {
+  font-weight: bold;
+  color: green;
+  margin-left: -120px;
+  font-size: small;
+}
+
+/*Keyboard  details*/
+.ItemCode2{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 240px;
+  font-size: small;
+}
+.img2 {
+  display: block;
+  margin-top: 30px;  
+  margin-left: 30px;
+  width: 80px;
+  height: 80px;
+}
+.table22{
+  width: 200px;
+  height: 200px;
+  margin-left: 140px;
+  margin-top: -80px;
+  font-size: small;
+}
+.thclass2{
+  width: 90px;
+  text-align: left;
+}
+.tdclass2{
+  width: 120px;
+}
+.serialCode2 {
+  font-weight: bold;
+  color: green;
+  margin-left: -120px;
+  margin-top: 30px;
+  font-size: small;
+}
+
+/*data boxes Screen details*/
+.table23{
+  width: 200px;
+  font-size: small;
+}
+.ItemCode3{
+  font-weight: bold;
+  color: red;
+  margin-top: -160px;
+  margin-left: 230px;
+  font-size: small;
+}
+.heading3 {
+  margin-top: 10px;
+  margin-left: 150px ;
+}
+.buttons{
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 80px;
+  border: 1px solid transparent;
+}
+.img3 {
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  margin-top: 10px;
+}
+.screen1{
+  margin-top: 40px;
+  margin-left: 150px;
+}
+.serialCode3 {
+  font-weight: bold;
+  color: green;
+  margin-left: -140px;
+  margin-top: 30px;
+  font-size: small;
+}
+
+/*data boxes Mouse details*/
+.ItemCode4{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 240px;
+  font-size: small;
+}
+.img4 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.table24{
+  width: 200px;
+  margin-left: 160px;
+  margin-top: -80px;
+  font-size: small;
+}
+.thclass24{
+  width: 90px;
+  text-align: left;
+ }
+.tdclass24{
+  width: 120px;
+  margin-left: 10px;
+ }
+.serialCode4 {
+  font-weight: bold;
+  color: green;
+  margin-left: -120px;
+  margin-top: 20px;
+  font-size: small;
+}
+
+/*data boxes Laptop details*/
+.ItemCode5{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 250px;
+  font-size: small;
+}
+.img5 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.table25{
+  width: 250px;
+  margin-left: 120px;
+  margin-top: -100px;
+  font-size: small;
+}
+.thclass25{
+  width: 90px;
+  text-align: left;
+ }
+.tdclass25{
+  width: 120px;
+  margin-left: 10px;
+  text-align: left;
+
+ }
+.serialCode5 {
+  font-weight: bold;
+  color: green;
+  margin-left: -100px;
+  margin-top: 10px;
+  font-size: small;
+}
+
+/*data boxes UPS details*/
+.ItemCode6{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 280px;
+  font-size: small;
+}
+.img6 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  margin-top: 60px;
+}
+.table26{
+  width: 250px;
+  margin-left: 140px;
+  margin-top: -90px;
+  font-size: small;
+}
+.thclass26{
+  width: 90px;
+  text-align: left;
+ }
+.tdclass26{
+  width: 120px;
+  margin-left: 10px;
+  text-align: left;
+
+ }
+.serialCode6 {
+  font-weight: bold;
+  color: green;
+  margin-left: -120px;
+  margin-top: 50px;
+  font-size: small;
+}
+
+/*data boxes Printer details*/
+.ItemCode7{
+  font-weight: bold;
+  color: red;
+  margin-top: -100px;
+  margin-left: 280px;
+  font-size: small;
+}
+.img7 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  margin-top: 60px;
+}
+.table27{
+  width: 250px;
+  margin-left: 140px;
+  margin-top: -90px;
+  font-size: small;
+}
+.thclass27{
+  width: 90px;
+  text-align: left;
+ }
+.tdclass27{
+  width: 120px;
+  margin-left: 10px;
+  text-align: left;
+
+ }
+.serialCode7 {
+  font-weight: bold;
+  color: green;
+  margin-left: -120px;
+  margin-top: 50px;
+  font-size: small;
+}
+
+  .tab button {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .styled-form {
+    margin: 10px auto;
+    padding: 15px;
+  }
+
+  .input-field {
+    padding: 8px;
+  }
+
+  
+
+ 
+}
+>>>>>>> Stashed changes
