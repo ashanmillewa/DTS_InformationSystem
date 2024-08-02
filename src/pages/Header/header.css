@@ -1,40 +1,52 @@
-.footer {
-    position: relative;
+.headerr {
+    position:relative;
     color: white;
     width: 100%;
-    background: #1B3F95;
+    background: #efefef;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: small;
     padding: 1rem 2rem;
-    margin-top: 50px;
     height: 3.75rem;
   }
   
-  .footer div {
+  .header div {
     margin-bottom: 0.5rem;
   }
   
-  .footer span {
+  .header span {
     color: white;
   }
   
-  .footerlink {
+  .headerlink {
     color: yellow;
     font-weight: 400;
     text-decoration: none;
   }
-   
-  @media screen and (max-width: 400px) {
-    .footer {
+
+  .logo{
+    margin-left: -1650px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .header {
       margin-top: 100px;
       font-size: smaller;
     }
-    .footTxt{
-      margin-left: -60px;
+    .logo{
+      margin-left: -180px
     }
-    
+  }
+   
+  @media screen and (max-width: 400px) {
+    .header {
+      margin-top: 100px;
+      font-size: smaller;
+    }
+    .logo{
+      margin-left: -130px
+    }
   }
   

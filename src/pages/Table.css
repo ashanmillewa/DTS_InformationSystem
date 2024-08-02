@@ -1,36 +1,88 @@
-/* General Styles */
+.search {
+  width: 220px;
+  position: relative;
+  display: flex;
+
+}
+
+.searchTerm {
+  width: 200px;
+  border: 3px solid #1B3F95;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #1B3F95;
+}
+
+.searchTerm:focus{
+  color: red;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #1B3F95;
+  background: #1B3F95;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap{
+  width: 10%;
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 1350px;
+  transform: translate(-50%, -50%);
+}
+
 .table-container {
   width: 100%;
 }
 
+.header{
+  margin-top: 100px;
+}
 .title {
   padding: 10px 50px;
+  color: darkgrey;
 }
 
 .profile {
-  margin-left: 190px;
-  margin-top: 2px;
+  margin-left: 390px;
+  margin-top: -8px;
   width: 130px;
   height: 150px;
 }
 /* 1st table*/
 .table1{
   margin: 20px auto;
-  margin-left: 150px;
+  margin-left: 350px;
   border-collapse: collapse;
-  border: 1px solid black;
+  /* border: 1px solid black;   */
   font-size: small;
 }
 .th1clz{
   padding: 8px;
   text-align: left;
   border: 1px solid black;
+
 }
 .td1clz{
   width: 200px;
   padding: 8px;
   text-align: left;
   border: 1px solid black;
+
+}
+
+/*2nd table*/
+.table2{
+ display: none; 
 }
 
 /*2nd main table*/
@@ -44,7 +96,7 @@
 .detailsClz01, .detailsClz02, .detailsClz03, .detailsClz04, .detailsClz05, .detailsClz06, .detailsClz07 {
   width: 400px;
   height: 350px;
-  border: 2px solid #161515;
+  border: 1px solid #161515;
   margin: 10px;
   float: left;
 }
@@ -135,6 +187,15 @@
 .buttons{
   margin-top: 60px;
 }
+.thclass23{
+  width: 90px;
+  text-align: left;
+ }
+.tdclass23{
+  width: 120px;
+  margin-left: 10px;
+  text-align: left;
+ }
 .img3 {
   width: 100px;
   height: 100px;
@@ -199,7 +260,7 @@
   width: 100px;
   height: 100px;
   margin-left: 30px;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 .table25{
   width: 250px;
@@ -219,7 +280,7 @@
   font-weight: bold;
   color: green;
   margin-left: -120px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 /*data boxes UPS details*/
@@ -234,12 +295,12 @@
   width: 100px;
   height: 100px;
   margin-left: 30px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .table26{
   width: 250px;
   margin-left: 140px;
-  margin-top: -120px;
+  margin-top: -100px;
 }
 .thclass26{
   width: 90px;
@@ -254,7 +315,7 @@
   font-weight: bold;
   color: green;
   margin-left: -120px;
-  margin-top: 90px;
+  margin-top: 150px;
 }
  
  
@@ -270,12 +331,12 @@
   width: 100px;
   height: 100px;
   margin-left: 30px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .table27{
   width: 250px;
   margin-left: 140px;
-  margin-top: -120px;
+  margin-top: -80px;
 }
 .thclass27{
   width: 90px;
@@ -336,71 +397,111 @@
 }
 
 /* Media Queries for Responsiveness */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
 
 
-  .profile{
-    width: 100px;
-    height: 120px;
-    margin-left: 20px;
+
+  .title {
+    width: 100%;
+    margin-top: 10px;
+    color: darkgrey;
+  }
+  
+  .wrap{
+    margin-top: 50px;
+    margin-left: -90px;
+  }
+
+  .profile {
+    width: 120px;
+    height: 130px;
+    margin-top: 20px;
+    margin-left: 140px;  
   }
 
   .table1{
-    margin-left: -80px;
-    margin-right: auto;
-    margin-top: 130px;
-    float: none;
-    width: 90%;
-    font-size: medium;
+  display: none;
   }
+
+  .table2{
+    display: block;
+    margin-left: -38px;
+    margin-top: 190px;
+    border-collapse: collapse;
+    font-size: small;
+  } 
+  .th2clz{
+    padding: 8px;
+    text-align: left;
+    border-collapse:  separate;
+    border: 1px solid black;
+  }
+  .td2clz{
+    width: 200px;
+    padding: 8px;
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+ 
+  
 
   .detailsClz01{
     margin-left: auto;
     margin-right: auto;
     float: none;
-    width: 90%;
-  }
+    width: 360px;
+    border: 1px solid black;
+    }
+
   .detailsClz02{
-    margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
   float: none;
-  width: 90%;
+  width: 360px;
   height: 220px;
+  border: 1px solid black;
   }
   .detailsClz03{
     margin-left: auto;
     margin-right: auto;
     float: none;
-    width: 90%;
+    width: 360px;
     height: 300px;
+    border: 1px solid black;
 
   }
   .detailsClz04{
     margin-left: auto;
     margin-right: auto;
     float: none;
-    width: 90%;
+    width: 360px;
     height: 220px;
+    border: 1px solid black;
   }
   .detailsClz05{
     margin-left: auto;
     margin-right: auto;
     float: none;
-    width: 90%;
+    width: 360px;
+    height: 300px;
+    border: 1px solid black;
   }
   .detailsClz06{
     margin-left: auto;
     margin-right: auto;
     float: none;
-    width: 90%;
+    width: 360px;
     height: 220px;
+    border: 1px solid black;
   }
   .detailsClz07{
     margin-left: auto;
     margin-right: auto;
     float: none;
-    width: 90%;
+    width: 360px;
     height: 220px;
+    border: 1px solid black;
   }
 
 
@@ -554,7 +655,7 @@
   width: 100px;
   height: 100px;
   margin-left: 10px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .table25{
   width: 250px;
@@ -671,81 +772,107 @@
     width: 200px;
   }
 
-  .table1{
-    margin-left: -75px;
-    border: 1px solid black;
-    font-size: small;
-    width: 90%;
-  }
+  
   
 }
 
 @media screen and (max-width: 400px) {
 
-  .table1{
-    margin-left: -95px;
-    border: 1px solid black;
-    font-size: small;
+  .title {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: darkgrey;
+    
   }
+  
+  .wrap{
+    margin-top: 10px;
+    margin-left: 130px;
+  }
+
   .profile {
     width: 120px;
     height: 130px;
+    margin-top: 10px;
+    margin-left: 130px;  
   }
 
-  .title {
-    padding: 10px 50px;
+  .table1{
+  display: none;
   }
 
+  .table2{
+    display: block;
+    margin-left: -48px;
+    margin-top: 190px;
+    border-collapse: collapse;
+    font-size: small;
+  } 
+  .th2clz{
+    padding: 8px;
+    text-align: left;
+    border-collapse:  separate;
+    border: 1px solid black;
+  }
+  .td2clz{
+    width: 200px;
+    padding: 8px;
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
   .detailsClz01{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
     float: none;
-    width: 85%;
+    width: 350px;
     height: 320px;
+    border: 1px solid black;
   }
   .detailsClz02{
-    margin-left: auto;
-  margin-right: auto;
+    margin-left: 50px;
   float: none;
-  width: 85%;
+  width: 350px;
   height: 220px;
+  border: 1px solid black;
   }
   .detailsClz03{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
     float: none;
-    width: 85%;
+    width: 350px;
     height: 250px;
+    border: 1px solid black;
 
   }
   .detailsClz04{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
     float: none;
-    width: 85%;
+    width: 350px;
     height: 220px;
+    border: 1px solid black;
   }
   .detailsClz05{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
     float: none;
-    width: 85%;
+    width: 350px;
     height: 300px;
+    border: 1px solid black;
   }
   .detailsClz06{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
     float: none;
-    width: 85%;
+    width: 350px;
     height: 220px;
+    border: 1px solid black;
   }
   .detailsClz07{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
     float: none;
-    width: 85%;
+    width: 350px;
     height: 220px;
+    border: 1px solid black;
   }
+  
 
 
 
@@ -1029,8 +1156,4 @@
   .input-field {
     padding: 8px;
   }
-
-  
-
- 
 }

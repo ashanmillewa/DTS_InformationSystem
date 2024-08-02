@@ -1,4 +1,5 @@
 import Footer from "./Footer/footer";
+import Header from "./Header/header";
 import React, { useState, useEffect } from "react";
 import "./Table.css";
 import defaultProfilePicture from "./profile_picture.png";
@@ -11,6 +12,8 @@ import UPS from "../assets/ups.png";
 import Printer from "../assets/printer.png";
 import axios from "axios";
 import { useSearchParams } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const Table = () => {
   const [ictDetails, setIctDetails] = useState({});
@@ -70,22 +73,33 @@ const Table = () => {
 
   return (
     <div className="table-container">
-      <h2 className="title">Computer Information</h2>
-      <input
-        className="input-field"
-        type="text"
-        placeholder="Please enter computer code"
-        value={computerCode}
-        onChange={(e) =>
-          setSearchParams(
-            (prev) => {
-              prev.set("computerCode", e.target.value);
-              return prev;
-            },
-            { replace: true }
-          )
-        }
-      />
+      <Header className="header" />
+
+      <h2 className="title">CDL Computer Information</h2>
+
+      <div class="wrap">
+        <div class="search">
+          <input
+            className="searchTerm"
+            type="text"
+            placeholder="Please enter computer code"
+            value={computerCode}
+            onChange={(e) =>
+              setSearchParams(
+                (prev) => {
+                  prev.set("computerCode", e.target.value);
+                  return prev;
+                },
+                { replace: true }
+              )
+            }
+          />
+          <button type="submit" className="searchButton">
+      <FontAwesomeIcon icon={faSearch} />
+    </button>
+        </div>
+      </div>
+
       <div
         className="column"
         style={{
@@ -98,21 +112,6 @@ const Table = () => {
           <img src={userImage} alt="Profile" className="profile" />
         </div>
       </div>
-
-      <imput
-        type="checkbox"
-        id="onlyComputerItems"
-        checked={onlyComputerItems}
-        onChange={(e) =>
-          setSearchParams(
-            (prev) => {
-              prev.set("computerCode", e.target.value);
-              return prev;
-            },
-            { replace: true }
-          )
-        }
-      />
 
       <div
         className="column"
@@ -151,17 +150,48 @@ const Table = () => {
                   <th className="th1clz">Location</th>
                   <td className="td1clz">{ictDetails.LocName}</td>
                   <th className="th1clz">Status</th>
-                  <td className="td1clz">
-                    <select
-                      value={ictDetails.Status}
-                      onChange={(e) =>
-                        handleStatusChange(index, e.target.value)
-                      }
-                    >
-                      <option value="Active">Active</option>
-                      <option value="Inactive">Inactive</option>
-                    </select>
-                  </td>
+                  <td className="td1clz">Active</td>
+                </tr>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <table className="table2">
+          <tbody>
+            {data.map((row, index) => (
+              <tr key={index}>
+                <tr>
+                  <th className="th2clz">Service Number</th>
+                  <td className="td2clz">{ictDetails.ServiceNo}</td>
+                </tr>
+                <tr>
+                  <th className="th2clz">Division</th>
+                  <td className="td2clz">{ictDetails.DiviCode}</td>
+                </tr>
+                <tr>
+                  <th className="th2clz">Department</th>
+                  <td className="td2clz">{ictDetails.DepCode}</td>
+                </tr>
+                <tr>
+                  <th className="th2clz">Location</th>
+                  <td className="td2clz">{ictDetails.LocName}</td>
+                </tr>
+                <tr>
+                  <th className="th2clz">Email Address</th>
+                  <td className="td2clz">{ictDetails.Email}</td>
+                </tr>
+                <tr>
+                  <th className="th2clz">IP Address</th>
+                  <td className="td2clz">{ictDetails.IP_Addres}</td>
+                </tr>
+                <tr>
+                  <th className="th2clz">Computer Name</th>
+                  <td className="td2clz">{ictDetails.ComputerName}</td>
+                </tr>
+                <tr>
+                  <th className="th1clz">Status</th>
+                  <td className="td1clz">Active</td>
                 </tr>
               </tr>
             ))}
@@ -294,23 +324,23 @@ const Table = () => {
                   <td>
                     <div className="tab">
                       <div className="buttons">
-                      <button
-                        className={`tablinks ${
-                          activeTab === "Tab1" ? "active" : ""
-                        }`}
-                        onClick={() => handleTabClick("Tab1")}
-                      >
-                        Screen 1
-                      </button>
+                        <button
+                          className={`tablinks ${
+                            activeTab === "Tab1" ? "active" : ""
+                          }`}
+                          onClick={() => handleTabClick("Tab1")}
+                        >
+                          Screen 1
+                        </button>
 
-                      <button
-                        className={`tablinks ${
-                          activeTab === "Tab2" ? "active" : ""
-                        }`}
-                        onClick={() => handleTabClick("Tab2")}
-                      >
-                        Screen 2
-                      </button>
+                        <button
+                          className={`tablinks ${
+                            activeTab === "Tab2" ? "active" : ""
+                          }`}
+                          onClick={() => handleTabClick("Tab2")}
+                        >
+                          Screen 2
+                        </button>
                       </div>
 
                       <h2 className="heading3">Screen</h2>
@@ -318,6 +348,8 @@ const Table = () => {
                       <div>
                         <img src={Monitor} alt="sysImg" className="img3" />
                       </div>
+
+                      {/* Tab 1 Content */}
                       <div
                         id="Tab1"
                         className={`tabcontent ${
@@ -329,33 +361,29 @@ const Table = () => {
                             <p className="ItemCode3">
                               {ictDetails.ICT_Screen[0].ScreenCode}
                             </p>
-
                             <table className="screen1">
                               <tbody>
                                 <tr>
-                                  <th className="thclass3">Display</th>
-                                  <td className="tdclass3">
+                                  <th className="thclass23">Display</th>
+                                  <td className="tdclass23">
                                     :&nbsp;&nbsp;
                                     {ictDetails.ICT_Screen[0].ScreenDisplaySize}
                                   </td>
                                 </tr>
-
                                 <tr>
-                                  <th className="thclass3">Make</th>
-                                  <td className="tdclass3">
+                                  <th className="thclass23">Make</th>
+                                  <td className="tdclass23">
                                     :&nbsp;&nbsp;
                                     {ictDetails.ICT_Screen[0].ScreenMake}
                                   </td>
                                 </tr>
-
                                 <tr>
-                                  <th className="thclass3">Model</th>
-                                  <td className="tdclass3">
+                                  <th className="thclass23">Model</th>
+                                  <td className="tdclass23">
                                     :&nbsp;&nbsp;
                                     {ictDetails.ICT_Screen[0].ScreenModel}
                                   </td>
                                 </tr>
-
                                 <tr>
                                   <td colSpan="2">
                                     <p className="serialCode3">
@@ -369,6 +397,8 @@ const Table = () => {
                           </>
                         )}
                       </div>
+
+                      {/* Tab 2 Content */}
                       <div
                         id="Tab2"
                         className={`tabcontent ${
@@ -380,33 +410,29 @@ const Table = () => {
                             <p className="ItemCode3">
                               {ictDetails.ICT_Screen[1].ScreenCode}
                             </p>
-
                             <table className="screen1">
                               <tbody>
                                 <tr>
-                                  <th className="thclass3">Display</th>
-                                  <td className="tdclass3">
+                                  <th className="thclass23">Display</th>
+                                  <td className="thclass23">
                                     :&nbsp;&nbsp;
                                     {ictDetails.ICT_Screen[1].ScreenDisplaySize}
                                   </td>
                                 </tr>
-
                                 <tr>
-                                  <th className="thclass3">Make</th>
-                                  <td className="tdclass3">
+                                  <th className="thclass23">Make</th>
+                                  <td className="thclass23">
                                     :&nbsp;&nbsp;
                                     {ictDetails.ICT_Screen[1].ScreenMake}
                                   </td>
                                 </tr>
-
                                 <tr>
-                                  <th className="thclass3">Model</th>
-                                  <td className="tdclass3">
+                                  <th className="thclass23">Model</th>
+                                  <td className="thclass23">
                                     :&nbsp;&nbsp;
                                     {ictDetails.ICT_Screen[1].ScreenModel}
                                   </td>
                                 </tr>
-
                                 <tr>
                                   <td colSpan="2">
                                     <p className="serialCode3">
@@ -438,7 +464,7 @@ const Table = () => {
             <table className="table24">
               <tbody>
                 {data.map((row, index) => (
-                  <tr key={index} >
+                  <tr key={index}>
                     <tr className="tablecont4">
                       <th className="thclass24">Make</th>
                       <td className="tdclass24">

@@ -4,11 +4,11 @@ import "./footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div>
+      <div className="footTxt">
         <span>&#169;Copyright </span> 
          DTS.  All Rights Reserved
       </div>
-      <div>
+      <div className="footTxt">
         Designed by &nbsp;
         <a href="https://www.dockyardsolutions.lk/" className="footerlink">
           Dockyard Total Solutions
